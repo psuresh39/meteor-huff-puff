@@ -1,0 +1,72 @@
+<head>
+<title>File Uploader - Upload your files fast simple and easy</title>
+</head>
+
+
+<body>
+    {{> fileupload_page}}
+</body>
+
+
+<template name="fileupload_page">
+{{#if currentUser}}
+	<input type="button" class="logout" value="logout"/>
+	<div id="templatemo_content">
+	
+	    <div id="twitter_section">
+	    	
+		<p>Upload to 'FileUploader'.
+You can select more than one file at a time. Click on browse files and then on upload file to start uploading.</p>
+		
+		<div class="cleaner"></div>
+	    </div>
+	    
+	</div>
+  <form>
+    <input type="file" style="margin-left:370px;cursor:pointer" name="files" multiple />
+    <br><br><br>
+    <div>
+      <input type="submit" class="upload" style="margin-left:1070px;cursor:pointer" value="Upload File"/>
+    </div>
+  </form>
+{{else}}
+<div class="span5">
+		    <div style="float: right;margin: 0px 20px 0px 0px;">
+		      {{loginButtons align="right"}}
+		    </div>
+	</div>
+	<div id="templatemo_site_title_bar_wrapper">       
+	</div>
+
+	<div id="templatemo_banner_wrapper_outter">
+	<div id="templatemo_banner_wrapper">
+	
+	    <div id="templatemo_banner">
+	    
+	    <div id="templatemo_content">
+	
+	    <div id="twitter_section">
+	    	
+		<p>Simple , Safe , Fast and Hassel free. Now you can upload once and access your files anywhere</p>
+		
+		<div class="cleaner"></div>
+	    </div>
+	    <img src="/safe1.png" alt="Safety Vault" />
+	    </div>
+	    </div> 
+
+	</div>
+	</div>
+
+	<div id="templatemo_content">
+	
+	    <div id="twitter_section">
+	    	
+		<p>Sign up now and start uploading !!!</p>
+		
+		<div class="cleaner"></div>
+	    </div>
+	    
+	</div>
+{{/if}}
+</template>
